@@ -21,8 +21,10 @@ const close = document.querySelector("#full button");
 
 menu.addEventListener("click", () => {
   timeline.play();
+  menu.style.display = "none";
 });
 
 close.addEventListener("click", () => {
   timeline.reverse();
+  menu.style.display = "block";
 });
